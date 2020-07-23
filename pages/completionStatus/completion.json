@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "查看完成记录",
+  "usingComponents": {
+    "table":"../components/table/table"
+  }
+}

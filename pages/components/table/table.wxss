@@ -1,0 +1,42 @@
+/* pages/component/table/table.wxss */
+.table-outer-box {
+  display: flex;
+  flex-direction: column;
+  padding: 50rpx 50rpx 0;
+  flex: 1;
+  }
+  
+  .table {
+  height: 95rpx;
+  color: black;
+  line-height: 80rpx;
+  border-top: 1rpx solid black;
+  border-bottom: 1rpx solid black;
+  text-align: center;
+  }
+  
+  .table-flex {
+  display: flex;
+  }
+  
+  .table-theme {
+  font-size: 32rpx;
+  }
+  
+  .table-item {
+  font-size: 28rpx;
+  opacity: 1;/*淡化字体*/
+  }
+  
+  .item {
+  white-space: nowrap;/*文本不进行换行*/
+  text-overflow: ellipsis;/*添加省略号*/
+  overflow: hidden;
+  cursor:pointer;
+  flex: 1;
+  }
+  
+  .scroll-view {
+  flex: 1;
+  }
+   

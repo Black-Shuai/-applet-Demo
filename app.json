@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/completionStatus/completion"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {  
+        "color": "#a9b7b7",  
+        "selectedColor": "#11cd6e",  
+        "borderStyle": "black" ,
+        "list": [{  
+          "selectedIconPath": "images/icon_API_HL.png",  
+          "iconPath": "images/icon_API.png",  
+          "pagePath": "pages/index/index",  
+          "text": "保洁巡检"  
+        }, {  
+          "selectedIconPath": "images/icon_component_HL.png",  
+          "iconPath": "images/icon_component.png",  
+          "pagePath": "pages/logs/logs",  
+          "text": "设备巡检"  
+        },{  
+          "selectedIconPath": "images/icon_component_HL.png",  
+          "iconPath": "images/icon_component.png",  
+          "pagePath": "pages/completionStatus/completion",  
+          "text": "保安巡检"  
+        }
+        ]  
+      } 
+}

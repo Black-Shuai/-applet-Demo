@@ -1,0 +1,6 @@
+<!--pages/completionStatus/completion.wxml-->
+<view>
+  <view>
+  <table class="title" tableThemes="{{themeArr}}" tableItems="{{itemArr}}"></table>
+  </view>
+</view>
