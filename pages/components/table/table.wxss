@@ -2,7 +2,7 @@
 .table-outer-box {
   display: flex;
   flex-direction: column;
-  padding: 50rpx 50rpx 0;
+  padding: 25rpx 25rpx 0;
   flex: 1;
   }
   

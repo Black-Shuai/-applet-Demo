@@ -8,6 +8,8 @@
     </block>
   </view>
   <view class="usermotto">
-    <text bindtap="toCompletion" class="user-motto">{{motto}}</text>
+        <view class="weui-cell">
+          <image-uploader id='imagUploader' uploadname='电子签名上传' style="flex:1;" bind:change="handleChooseImage"></image-uploader>
+        </view>
   </view>
 </view>

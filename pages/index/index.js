@@ -7,21 +7,34 @@ Page({
     motto: '完成情况测试',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
   },
   //事件处理函数
   bindViewTap: function() {
-    wx.navigateTo({
+    wx.switchTab({
       url: '../logs/logs'
     })
   },
   //转到完成详情
   toCompletion: function() {
-    wx.navigateTo({
-      url: '../completionStatus/completion'
-    })
+    console.log()
+    // wx.switchTab({
+    //   url: '../completionStatus/completion'
+    // })
+  },
+  onShow:function(){
+    if(app.globalData.isSignImage==true){
+      this.go_update()
+    }
+    console.log(app.globalData.isSignImage)
+    app.globalData.isSignImage=false
+  },
+  //更新本页面
+  go_update:function(){
+    this.selectComponent('#imagUploader').showImage()
   },
   onLoad: function () {
+    console.log('页面加载')
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

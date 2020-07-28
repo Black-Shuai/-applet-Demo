@@ -1,0 +1,6 @@
+.canvas {
+  width: 100%;
+  min-height: 400rpx;
+  border: 1rpx solid #000;   /*//突出canvas画布范围 */
+  box-sizing: border-box;
+}

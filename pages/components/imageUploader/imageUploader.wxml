@@ -1,0 +1,20 @@
+<!--pages/components/imageUploader/imageUploader.wxml-->
+<view class="weui-uploader">
+  <view>
+    <view class="weui-uploader__overview flex">
+      <view class="weui-uploader__title weui-cell__hd" style="border-right:none;">{{uploadname}}</view>
+      <view class="weui-uploader__info">{{images.length}}/1</view>
+    </view>
+  </view>
+  <view class="weui-uploader__bd">
+    <view class="weui-uploader__files" id="uploaderFiles">
+      <block wx:for="{{images}}" wx:key="*this">
+        <view class="weui-uploader__file" id="{{item}}">
+          <icon bind:tap="handleDelete" data-index="{{index}}" class="delete" type="cancel" size="23"></icon>
+          <image bind:tap="handlePreview" data-src="{{item}}" class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+        </view>
+      </block>
+      <image class="uploader-camera" src="../../../images/camera.svg" width="100px" height="100px" bindtap="handleChooseImage"></image>
+    </view>
+  </view>
+</view>

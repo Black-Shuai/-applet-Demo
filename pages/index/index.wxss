@@ -19,3 +19,15 @@
 .usermotto {
   margin-top: 200px;
 }
+.weui-cell {
+  height: 50vh;
+  width: 50vh;
+  padding: 0px 5px;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.2);
+}
+.uploader-camera {
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin: 46px 5px 5px 0;
+}

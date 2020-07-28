@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "主页",
-  "usingComponents": {}
+  "usingComponents": {
+    "image-uploader": "../components/imageUploader/imageUploader"
+  }
 }
